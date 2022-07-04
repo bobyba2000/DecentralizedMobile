@@ -50432,7 +50432,7 @@ r9(a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0
 return A.a7R(a4,a1,s.aw,j,i,g,h,a,a2,a0,d,s.ay,n,o,e,f,l,m,s.f,s.RG,c,b,s.x,s.w,s.r,p,q,s.y,s.Q,s.rx,s.a,s.b,d2===!0,k,s.c,r,s.d,s.fr,s.dx,s.go,s.dy,s.fy,s.fx,a3,s.k1,s.id,s.k4,s.ok,s.k3,s.k2)},
 Po(a){return this.r9(null,null,null,null,null,null,null,null,null,null,null,null,null,a,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)},
 agd(a,b){return this.r9(null,null,null,null,null,null,null,null,a,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,b,null,null,null,null,null,null,null,null)},
-agl(a,b,c,d){return this.r9(null,null,null,null,null,a,b,null,null,null,null,null,null,c,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,d,null)},
+agk(a,b,c,d){return this.r9(null,null,null,null,null,a,b,null,null,null,null,null,null,c,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,d,null)},
 agc(a,b){return this.r9(null,null,null,null,null,null,a,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,b,null)},
 agh(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7){return this.r9(a,b,c,d,null,e,null,f,null,g,h,i,j,null,k,l,m,n,o,p,q,r,s,a0,null,a1,a2,a3,a4,a5,a6,null,a7)},
 D0(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=e.e
@@ -52716,7 +52716,7 @@ k=i.amd(B.f.G(s-m,0,s))}else k=""
 if(j.gLn()){i=n.at
 if(i==null)i=""
 s=n.ax
-return n.agl(s==null?r.R8.Q.dA(r.p2):s,l,i,k)}return n.agc(l,k)},
+return n.agk(s==null?r.R8.Q.dA(r.p2):s,l,i,k)}return n.agc(l,k)},
 W(){var s=this
 s.ag()
 s.w=new A.XV(s,s)
@@ -70844,7 +70844,7 @@ Dz(a,b,c,d,e,f){var s=this,r=d==null?s.c:d,q=b==null?s.f:b,p=f==null?s.r:f,o=e==
 return A.awe(s.y,!1,s.at,s.b,s.as,n,s.ay,s.Q,s.z,s.ax,q,s.d,s.a,s.w,r,o,p)},
 Dw(a){return this.Dz(null,null,null,a,null,null)},
 ag2(a){return this.Dz(null,a,null,null,null,null)},
-agm(a,b,c,d){return this.Dz(a,b,null,null,c,d)},
+agl(a,b,c,d){return this.Dz(a,b,null,null,c,d)},
 SI(a,b,c,d){var s,r,q,p,o,n,m=this,l=null
 if(!(b||d||c||a))return m
 s=m.f
@@ -70892,7 +70892,7 @@ k=Math.max(0,l.c-s)
 l=Math.max(0,l.d-r)
 j=h.ch
 i=A.a9(j).i("aH<1>")
-return h.agm(A.ai(new A.aH(j,new A.a9C(a),i),!0,i.i("r.E")),new A.at(e,c,q,g),new A.at(f,d,k,l),new A.at(o,n,m,p))},
+return h.agl(A.ai(new A.aH(j,new A.a9C(a),i),!0,i.i("r.E")),new A.at(e,c,q,g),new A.at(f,d,k,l),new A.at(o,n,m,p))},
 k(a,b){var s,r=this
 if(b==null)return!1
 if(J.a2(b)!==A.K(r))return!1
@@ -80681,6 +80681,7 @@ j=A.aGs(new A.jK(A.qR(i,t.Cm)))
 p=t.N
 p=new A.a9D("application".toLowerCase(),"octet-stream".toLowerCase(),new A.m_(A.z(p,p),t.G5))
 h.y.push(new A.NP("file",i.length,b.b,p,j))
+h.r.n(0,"Access-Control-Allow-Origin","*")
 j=Date.now()
 s=2
 return A.v(A.avT(h.nl(0).G1(0,B.eH,new A.a90()),new A.a91(),t.kj,t.K),$async$vW)
@@ -80721,6 +80722,7 @@ h=i.h(c,a)
 if(p.c.e===!0){s=1
 break}o=b.a
 n=A.awn("GET",A.r6(h+"/download?hash="+b.pr()+"&fileName="+(b.pr()+"."+B.b.gT(o.split("."))),0,null))
+n.r.n(0,"Access-Control-Allow-Origin","*")
 m=Date.now()
 s=3
 return A.v(A.avT(n.nl(0).G1(0,B.eH,new A.a8X()),new A.a8Y(),t.kj,t.K),$async$nV)
@@ -80783,11 +80785,13 @@ break
 case 4:return A.D(null,r)}})
 return A.E($async$wU,r)},
 vV(a,b,c){return this.acF(a,b,c)},
-acF(a,b,c){var s=0,r=A.F(t.H),q=this,p,o
+acF(a,b,c){var s=0,r=A.F(t.H),q=this,p,o,n
 var $async$vV=A.B(function(d,e){if(d===1)return A.C(e,r)
 while(true)switch(s){case 0:o=J.am(c)
+n=A.awn("DELETE",A.r6(o.h(c,a)+"/delete?hash="+b.pr()+"&fileName="+(b.pr()+"."+B.b.gT(b.a.split("."))),0,null))
+n.r.n(0,"Access-Control-Allow-Origin","*")
 s=2
-return A.v(A.avT(A.awn("DELETE",A.r6(o.h(c,a)+"/delete?hash="+b.pr()+"&fileName="+(b.pr()+"."+B.b.gT(b.a.split("."))),0,null)).nl(0).G1(0,B.eH,new A.a8U()),new A.a8V(),t.kj,t.K),$async$vV)
+return A.v(A.avT(n.nl(0).G1(0,B.eH,new A.a8U()),new A.a8V(),t.kj,t.K),$async$vV)
 case 2:p=q.c
 o=o.o5(c)
 q.ie(p.Px(!0,o.ge2(o).cz(0,new A.a8W(q,a),t.y).cb(0)))
@@ -80798,7 +80802,7 @@ var $async$wD=A.B(function(a,b){if(a===1)return A.C(b,r)
 while(true)switch(s){case 0:p=$.hn()
 p.m5()
 p.kQ(!0)
-q.ie(q.c.agk(!1,!1,A.b([],t.HZ)))
+q.ie(q.c.agm(!1,!1,!1,A.b([],t.HZ)))
 s=2
 return A.v(q.jt(),$async$wD)
 case 2:return A.D(null,r)}})
@@ -80907,7 +80911,7 @@ s=s==null?null:B.b.fb(s,new A.a9b())
 return s===!1},
 mw(a,b,c,d,e,f,g,h,i,a0){var s=this,r=f==null?s.a:f,q=g==null?s.c:g,p=h==null?s.b:h,o=c==null?s.e:c,n=a0==null?s.r:a0,m=e==null?s.y:e,l=d==null?s.z:d,k=a==null?s.Q:a,j=b==null?s.f:b
 return new A.hB(r,p,q,i,o,j,n,s.w,s.x,m,l,k)},
-agk(a,b,c){return this.mw(null,null,a,null,null,b,null,c,null,null)},
+agm(a,b,c,d){return this.mw(null,a,b,null,null,c,null,d,null,null)},
 ago(a,b,c,d,e){return this.mw(a,null,null,b,c,null,d,null,null,e)},
 Pz(a,b){return this.mw(null,null,null,null,null,a,null,b,null,null)},
 Pq(a){return this.mw(null,null,null,null,null,null,null,a,null,null)},
