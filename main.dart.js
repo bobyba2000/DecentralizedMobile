@@ -80681,7 +80681,9 @@ j=A.aGs(new A.jK(A.qR(i,t.Cm)))
 p=t.N
 p=new A.a9D("application".toLowerCase(),"octet-stream".toLowerCase(),new A.m_(A.z(p,p),t.G5))
 h.y.push(new A.NP("file",i.length,b.b,p,j))
-h.r.n(0,"Access-Control-Allow-Origin","*")
+j=h.r
+j.n(0,"Access-Control-Allow-Origin","*")
+j.n(0,"Access-Control-Allow-Methods","GET, POST, DELETE, PUT")
 j=Date.now()
 s=2
 return A.v(A.avT(h.nl(0).G1(0,B.eH,new A.a90()),new A.a91(),t.kj,t.K),$async$vW)
@@ -80722,7 +80724,9 @@ h=i.h(c,a)
 if(p.c.e===!0){s=1
 break}o=b.a
 n=A.awn("GET",A.r6(h+"/download?hash="+b.pr()+"&fileName="+(b.pr()+"."+B.b.gT(o.split("."))),0,null))
-n.r.n(0,"Access-Control-Allow-Origin","*")
+m=n.r
+m.n(0,"Access-Control-Allow-Origin","*")
+m.n(0,"Access-Control-Allow-Methods","GET, POST, DELETE, PUT")
 m=Date.now()
 s=3
 return A.v(A.avT(n.nl(0).G1(0,B.eH,new A.a8X()),new A.a8Y(),t.kj,t.K),$async$nV)
@@ -80787,14 +80791,16 @@ return A.E($async$wU,r)},
 vV(a,b,c){return this.acF(a,b,c)},
 acF(a,b,c){var s=0,r=A.F(t.H),q=this,p,o,n
 var $async$vV=A.B(function(d,e){if(d===1)return A.C(e,r)
-while(true)switch(s){case 0:o=J.am(c)
-n=A.awn("DELETE",A.r6(o.h(c,a)+"/delete?hash="+b.pr()+"&fileName="+(b.pr()+"."+B.b.gT(b.a.split("."))),0,null))
-n.r.n(0,"Access-Control-Allow-Origin","*")
+while(true)switch(s){case 0:p=J.am(c)
+o=A.awn("DELETE",A.r6(p.h(c,a)+"/delete?hash="+b.pr()+"&fileName="+(b.pr()+"."+B.b.gT(b.a.split("."))),0,null))
+n=o.r
+n.n(0,"Access-Control-Allow-Origin","*")
+n.n(0,"Access-Control-Allow-Methods","GET, POST, DELETE, PUT")
 s=2
-return A.v(A.avT(n.nl(0).G1(0,B.eH,new A.a8U()),new A.a8V(),t.kj,t.K),$async$vV)
-case 2:p=q.c
-o=o.o5(c)
-q.ie(p.Px(!0,o.ge2(o).cz(0,new A.a8W(q,a),t.y).cb(0)))
+return A.v(A.avT(o.nl(0).G1(0,B.eH,new A.a8U()),new A.a8V(),t.kj,t.K),$async$vV)
+case 2:n=q.c
+p=p.o5(c)
+q.ie(n.Px(!0,p.ge2(p).cz(0,new A.a8W(q,a),t.y).cb(0)))
 return A.D(null,r)}})
 return A.E($async$vV,r)},
 wD(){var s=0,r=A.F(t.H),q=this,p
