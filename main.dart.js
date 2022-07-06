@@ -80684,6 +80684,7 @@ h.y.push(new A.NP("file",i.length,b.b,p,j))
 j=h.r
 j.n(0,"Access-Control-Allow-Origin","*")
 j.n(0,"Access-Control-Allow-Methods","GET, POST, DELETE, PUT")
+j.n(0,"Content-Security-Policy","upgrade-insecure-requests")
 j=Date.now()
 s=2
 return A.v(A.avT(h.nl(0).G1(0,B.eH,new A.a90()),new A.a91(),t.kj,t.K),$async$vW)
@@ -80727,6 +80728,7 @@ n=A.awn("GET",A.r6(h+"/download?hash="+b.pr()+"&fileName="+(b.pr()+"."+B.b.gT(o.
 m=n.r
 m.n(0,"Access-Control-Allow-Origin","*")
 m.n(0,"Access-Control-Allow-Methods","GET, POST, DELETE, PUT")
+m.n(0,"Content-Security-Policy","upgrade-insecure-requests")
 m=Date.now()
 s=3
 return A.v(A.avT(n.nl(0).G1(0,B.eH,new A.a8X()),new A.a8Y(),t.kj,t.K),$async$nV)
@@ -80796,6 +80798,7 @@ o=A.awn("DELETE",A.r6(p.h(c,a)+"/delete?hash="+b.pr()+"&fileName="+(b.pr()+"."+B
 n=o.r
 n.n(0,"Access-Control-Allow-Origin","*")
 n.n(0,"Access-Control-Allow-Methods","GET, POST, DELETE, PUT")
+n.n(0,"Content-Security-Policy","upgrade-insecure-requests")
 s=2
 return A.v(A.avT(o.nl(0).G1(0,B.eH,new A.a8U()),new A.a8V(),t.kj,t.K),$async$vV)
 case 2:n=q.c
